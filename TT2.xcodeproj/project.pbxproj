@@ -14,6 +14,7 @@
 		09E6490723DA85BF00A01171 /* TT2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09E6490523DA85BF00A01171 /* TT2.xcdatamodeld */; };
 		09E6490923DA85C100A01171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E6490823DA85C100A01171 /* Assets.xcassets */; };
 		09E6490C23DA85C100A01171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E6490A23DA85C100A01171 /* LaunchScreen.storyboard */; };
+		09E6491423DACC1F00A01171 /* OptimizerMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E6491323DACC1F00A01171 /* OptimizerMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		09E6490823DA85C100A01171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09E6490B23DA85C100A01171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09E6490D23DA85C100A01171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09E6491323DACC1F00A01171 /* OptimizerMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizerMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				09E648FE23DA85BF00A01171 /* SceneDelegate.swift */,
 				09E6490023DA85BF00A01171 /* ViewController.swift */,
 				09E6490223DA85BF00A01171 /* Main.storyboard */,
+				09E6491323DACC1F00A01171 /* OptimizerMath.swift */,
 				09E6490823DA85C100A01171 /* Assets.xcassets */,
 				09E6490A23DA85C100A01171 /* LaunchScreen.storyboard */,
 				09E6490D23DA85C100A01171 /* Info.plist */,
@@ -145,6 +148,7 @@
 				09E648FD23DA85BF00A01171 /* AppDelegate.swift in Sources */,
 				09E6490723DA85BF00A01171 /* TT2.xcdatamodeld in Sources */,
 				09E648FF23DA85BF00A01171 /* SceneDelegate.swift in Sources */,
+				09E6491423DACC1F00A01171 /* OptimizerMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

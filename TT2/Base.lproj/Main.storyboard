@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,178 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TT2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="TPt-vF-3Mc">
+                                <rect key="frame" x="0.0" y="104" width="377" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibW-G1-AIP" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="862"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FG3-J8-lOf" userLabel="Bos">
+                                                <rect key="frame" x="11.666666666666657" y="8" width="354" height="34"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-aB-Ylp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book_of_Shadows" translatesAutoresizingMaskIntoConstraints="NO" id="hNn-oS-LeJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="7BU-eQ-H5s"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOK OF SHADOWS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNu-G2-jRw">
+                                                                <rect key="frame" x="41" y="0.0" width="70" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" priority="996" constant="70" id="AGF-sM-Rqe"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                                                <color key="textColor" red="0.94184958929999996" green="0.58632105590000005" blue="0.21538001300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="..." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlT-M8-1Ky">
+                                                                <rect key="frame" x="112" y="0.0" width="90" height="34"/>
+                                                                <color key="backgroundColor" red="0.50134718418121338" green="0.48646938800811768" blue="0.47842866182327271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Tr5-s6-KcS"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <connections>
+                                                                    <action selector="BosLevelUpdated:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="JFO-go-rS2"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDu-Lo-ydl">
+                                                                <rect key="frame" x="203" y="0.0" width="55" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="0tg-rN-8aP"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <color key="textColor" red="0.94184958929999996" green="0.58632105590000005" blue="0.21538001300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-tx-SKn">
+                                                                <rect key="frame" x="259" y="0.0" width="95" height="34"/>
+                                                                <color key="backgroundColor" red="0.2084667980670929" green="0.19861596822738647" blue="0.24706920981407166" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="95" id="JCQ-Yu-3PV"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <action selector="BoS_Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wbr-hb-hIG"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fow-5z-CHb" userLabel="ChargedCard">
+                                                <rect key="frame" x="11.666666666666657" y="50" width="354" height="34"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qnc-mX-o4l">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChargedCard" translatesAutoresizingMaskIntoConstraints="NO" id="eRD-l9-f7H">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="Ep7-2W-MCS"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHARGED CARD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSj-R9-JD3">
+                                                                <rect key="frame" x="41" y="0.0" width="70" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" priority="996" constant="70" id="JRb-6E-XEq"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                                                <color key="textColor" red="0.94184958929999996" green="0.58632105590000005" blue="0.21538001300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="..." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EP9-60-PdR">
+                                                                <rect key="frame" x="112" y="0.0" width="90" height="34"/>
+                                                                <color key="backgroundColor" red="0.50134718420000002" green="0.486469388" blue="0.47842866179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="eGg-kU-7GZ"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                                <connections>
+                                                                    <action selector="ChargedCardUpdated:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1m8-ZH-Q4M"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBd-dD-4D8">
+                                                                <rect key="frame" x="203" y="0.0" width="55" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="huy-J4-w7L"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                                <color key="textColor" red="0.94184958929999996" green="0.58632105590000005" blue="0.21538001300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xn8-if-NyN">
+                                                                <rect key="frame" x="259" y="0.0" width="95" height="34"/>
+                                                                <color key="backgroundColor" red="0.20846679809999999" green="0.19861596819999999" blue="0.24706920979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="95" id="qgv-VU-QDu"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <action selector="ChargedCard_Stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="wR4-eT-xBU"/>
+                                                                </connections>
+                                                            </stepper>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fow-5z-CHb" firstAttribute="top" secondItem="FG3-J8-lOf" secondAttribute="bottom" constant="8" id="4bG-Bd-Eo9"/>
+                                            <constraint firstItem="fow-5z-CHb" firstAttribute="centerX" secondItem="ibW-G1-AIP" secondAttribute="centerX" id="8rg-Dl-Hqu"/>
+                                            <constraint firstItem="FG3-J8-lOf" firstAttribute="top" secondItem="ibW-G1-AIP" secondAttribute="top" constant="8" id="Xrj-iL-to0"/>
+                                            <constraint firstItem="FG3-J8-lOf" firstAttribute="centerX" secondItem="ibW-G1-AIP" secondAttribute="centerX" id="tsD-Qj-G1Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="fow-5z-CHb" secondAttribute="bottom" constant="778" id="y0l-Qh-35f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ibW-G1-AIP" secondAttribute="bottom" id="T0f-NA-OPx"/>
+                                    <constraint firstItem="ibW-G1-AIP" firstAttribute="centerX" secondItem="TPt-vF-3Mc" secondAttribute="centerX" id="ZIk-p8-woT"/>
+                                    <constraint firstAttribute="trailing" secondItem="ibW-G1-AIP" secondAttribute="trailing" id="ZK9-6L-gZa"/>
+                                    <constraint firstItem="ibW-G1-AIP" firstAttribute="top" secondItem="5Pv-uC-atk" secondAttribute="top" id="pbm-Sb-Dcr"/>
+                                    <constraint firstItem="ibW-G1-AIP" firstAttribute="width" secondItem="TPt-vF-3Mc" secondAttribute="width" id="sC3-gy-ZLV"/>
+                                    <constraint firstItem="ibW-G1-AIP" firstAttribute="height" secondItem="TPt-vF-3Mc" secondAttribute="height" id="tZ2-US-H26"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="5Pv-uC-atk"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ezU-Ai-Lj7"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TPt-vF-3Mc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="2" id="5cL-pX-7g2"/>
+                            <constraint firstItem="TPt-vF-3Mc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="CyA-E1-YA2"/>
+                            <constraint firstItem="TPt-vF-3Mc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6n-7O-MCx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="BosLevel_TextField" destination="dlT-M8-1Ky" id="Rsk-xC-gB4"/>
+                        <outlet property="BosScientificValue_Label" destination="fDu-Lo-ydl" id="WCr-df-UVZ"/>
+                        <outlet property="ChargedCardScientificValue_Label" destination="zBd-dD-4D8" id="oAR-89-B9q"/>
+                        <outlet property="ChargedCard_TextField" destination="EP9-60-PdR" id="dKf-bd-p04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="112.3152709359606"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Book_of_Shadows" width="50" height="50"/>
+        <image name="ChargedCard" width="30" height="30"/>
+    </resources>
 </document>

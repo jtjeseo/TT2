@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G2022" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BookOfShadows" representedClassName="BookOfShadows" syncable="YES" codeGenerationType="class">
+        <attribute name="damagecategory" optional="YES" attributeType="String"/>
+        <attribute name="level" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lvlamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ChargedCard" representedClassName="ChargedCard" syncable="YES" codeGenerationType="class">
+        <attribute name="level" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="BookOfShadows" positionX="-105.01953125" positionY="19.85546875" width="128" height="28"/>
+        <element name="ChargedCard" positionX="152.6484375" positionY="5.83984375" width="128" height="28"/>
+    </elements>
 </model>
